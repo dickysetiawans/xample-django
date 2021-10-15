@@ -1,0 +1,33 @@
+{% load static %}
+<!DOCTYPE html>
+<html>
+<head>
+
+	<title>Login</title>
+  <link rel="stylesheet" type="text/css" href="{% static 'css/login.css' %}">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
+  <link rel="icon" href="{% static 'img/icon.png' %}">
+</head>
+<body>
+<div class="login">
+  <div class="navbar">
+    <h1 class="login_title">Login</h1>
+  </div>
+  
+  <form class="login_input" action="/login/konfirmasi/">
+
+  <input type="text" name="Username" class="username" placeholder=" Username"><br>
+   <input type="Password" name="Password" class="password" placeholder=" Password">
+   <input type="submit" name="" class="tombol_login">
+  
+      <a href="/" class="link1">Register</a>
+      <p class="link2">|</p>
+      <a href="" class="link3">Lupa Sandi?</a>
+  </form>
+  
+</div>	
+<img src="{% static 'img/Background.jpg' %}" class="img">
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js" integrity="sha384-b5kHyXgcpbZJO/tY9Ul7kGkf1S0CWuKcCD38l8YkeH8z8QjE0GmW1gYU5S9FOnJ0" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.6.0/dist/umd/popper.min.js" integrity="sha384-KsvD1yqQ1/1+IA7gi3P0tyJcT3vR+NdBTt13hSJ2lnve8agRGXTTyNaBYmCR/Nwi" crossorigin="anonymous"></script>
+</body>
+</html>
